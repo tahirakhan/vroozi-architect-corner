@@ -1,0 +1,14 @@
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/tahirakhan/vroozi-cloud-config-repo
+          username: tahirakhan
+          password: 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
+          default-label: master
+  application:
+    name:config-server
+server:
+  port: ${port:8888}

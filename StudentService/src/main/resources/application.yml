@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: student-service
+
+server:
+  port: 8001
+
+message: Good Morning VROOZI
