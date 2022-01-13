@@ -1,11 +1,12 @@
 spring:
   application:
-    name: student-service
+    name: university-service
   cloud:
     config:
       uri: http://localhost:8888
+
 server:
-  port: 8001
+  port: 8101
 
 management:
   endpoint:
@@ -16,3 +17,6 @@ management:
       exposure:
         include: "refresh"
 
+student-service:
+  ribbon:
+    listOfServers: http://localhost:8001, http://localhost:8002
