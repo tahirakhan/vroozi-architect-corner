@@ -17,6 +17,6 @@ management:
       exposure:
         include: "refresh"
 
-student-service:
-  ribbon:
-    listOfServers: http://localhost:8001, http://localhost:8002
+#student-service:
+#  ribbon:
+#    listOfServers: http://localhost:8001, http://localhost:8002
