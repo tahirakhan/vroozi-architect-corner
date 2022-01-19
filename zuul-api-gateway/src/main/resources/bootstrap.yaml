@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: zuul-proxy-server
+
+server:
+  port: 8765
+#
+#zuul:
+#  routes:
+#    university-service: /uni/**
+#    //url: http://localhost:8101/
+
+
+
