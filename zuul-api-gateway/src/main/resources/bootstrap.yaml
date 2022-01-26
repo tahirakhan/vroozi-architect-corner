@@ -4,11 +4,16 @@ spring:
 
 server:
   port: 8765
-#
-#zuul:
-#  routes:
-#    university-service: /uni/**
-#    //url: http://localhost:8101/
+
+zuul:
+  routes:
+    university-service: /uni/**
+    url: http://localhost:8101
 
 
 
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
