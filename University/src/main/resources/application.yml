@@ -17,6 +17,7 @@ management:
       exposure:
         include: "refresh"
 
-student-service:
-  ribbon:
-    listOfServers: http://localhost:8001, http://localhost:8002
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
