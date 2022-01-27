@@ -6,7 +6,7 @@ spring:
         git:
           uri: https://github.com/tahirakhan/vroozi-cloud-config-repo
           username: tahirakhan
-          password: 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
+          password: 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1122334455
           default-label: master
   application:
     name:config-server

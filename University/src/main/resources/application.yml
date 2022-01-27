@@ -11,13 +11,21 @@ server:
   port: 8101
 
 management:
+  metrics:
+    export:
+      datadog:
+        enabled: false
+      prometheus:
+        enabled: true
+      jmx:
+        enabled: true
   endpoint:
     refresh:
       enabled: true
   endpoints:
     web:
       exposure:
-        include: "refresh"
+        include: "*"
 
 eureka:
   client:

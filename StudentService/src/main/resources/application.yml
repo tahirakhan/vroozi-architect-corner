@@ -8,13 +8,21 @@ server:
   port: 8001
 
 management:
+  metrics:
+    export:
+      datadog:
+        enabled: false
+      prometheus:
+        enabled: true
+      jmx:
+        enabled: true
   endpoint:
     refresh:
       enabled: true
   endpoints:
     web:
       exposure:
-        include: "refresh"
+        include: "*"
 
 #eureka:
 #  client:

@@ -15,7 +15,7 @@ spring:
           lower-case-service-id: true
 server:
   port: 8900
-debug: true
+#debug: true
 
 
 eureka:
